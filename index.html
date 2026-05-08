@@ -7,13 +7,14 @@
     <title>JG Reboque Guinchos | Socorro Automotivo Urbano 24 Horas</title>
     
     <!-- Preload critical assets -->
-    <link rel="preload" as="image" href="assets/truck-bg-1.webp">
+    <link rel="preload" as="image" href="assets/truck-bg-1.webp" fetchpriority="high">
     <link rel="preload" as="image" href="assets/logo1.webp">
 
     <!-- Fonts: Mais urbanas e industriais -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Montserrat:wght@400;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
     
     <!-- Icons -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
