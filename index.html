@@ -6,13 +6,18 @@
     <meta name="description" content="JG Reboque Guinchos - Serviço de guincho e reboque 24 horas para carros, motos, vans, SUVs, blindados e rebaixados. Atendimento rápido e eficiente na Grande São Paulo, ABC, Guarulhos e Zona Sul.">
     <title>JG Reboque Guinchos | Socorro Automotivo Urbano 24 Horas</title>
     
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="assets/truck-bg-1.jpg.jpeg">
+    <link rel="preload" as="image" href="assets/logo1.jpeg">
+
     <!-- Fonts: Mais urbanas e industriais -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
@@ -29,23 +34,23 @@
     <!-- Navbar -->
     <header class="navbar">
         <div class="container nav-content">
-            <a href="#" class="logo">
-                <img src="assets/logo1.jpeg" alt="JG Reboque Guinchos Logo" class="logo-img">
+            <a href="#" class="logo" aria-label="Página inicial">
+                <img src="assets/logo1.jpeg" alt="JG Reboque Guinchos Logo" class="logo-img" width="250" height="90">
             </a>
             
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Menu principal">
                 <a href="#inicio">Início</a>
                 <a href="#servicos">Especialidades</a>
                 <a href="#sobre">A Empresa</a>
                 <a href="#atuacao">Área de Atuação</a>
             </nav>
             
-            <a href="https://wa.me/5511965877326?text=Ol%C3%A1%21+Preciso+de+um+guincho+urgente." target="_blank" class="btn btn-urban nav-btn">
-                <i class="fa-brands fa-whatsapp"></i> GUINCHO RÁPIDO
+            <a href="https://wa.me/5511965877326?text=Ol%C3%A1%21+Preciso+de+um+guincho+urgente." target="_blank" class="btn btn-urban nav-btn" aria-label="Solicitar guincho rápido pelo WhatsApp">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> GUINCHO RÁPIDO
             </a>
             
-            <button class="mobile-menu-btn">
-                <i class="fa-solid fa-bars"></i>
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
         </div>
     </header>
@@ -60,8 +65,8 @@
                 <h1 class="glitch-text slide-up-anim" data-text="JG REBOQUE GUINCHOS">JG REBOQUE GUINCHOS</h1>
                 <p class="slide-up-anim delay-1">Especialistas em resgate urbano, remoção e socorro. Pior do que o imprevisto, é a demora. A <strong>JG</strong> resolve na hora.</p>
                 <div class="hero-buttons slide-up-anim delay-2">
-                    <a href="https://wa.me/5511965877326?text=Ol%C3%A1%21+Preciso+de+um+guincho+urgente." target="_blank" class="btn btn-urban btn-pulse">
-                        <i class="fa-brands fa-whatsapp"></i> (11) 96587-7326
+                    <a href="https://wa.me/5511965877326?text=Ol%C3%A1%21+Preciso+de+um+guincho+urgente." target="_blank" class="btn btn-urban btn-pulse" aria-label="Ligar para WhatsApp (11) 96587-7326">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> (11) 96587-7326
                     </a>
                 </div>
             </div>
@@ -130,7 +135,7 @@
             <div class="about-image-card reveal">
                 <div class="glass-cyber-card tilt-effect">
                     <!-- Nova logo destaque (fundo preto bordas redondas) -->
-                    <img src="assets/logo1.jpeg" alt="Logo JG" class="about-logo">
+                    <img src="assets/logo1.jpeg" alt="Logo JG" class="about-logo" width="250" height="250" loading="lazy">
                     <h3>ATENDIMENTO TÁTICO</h3>
                     <div class="cyber-timer">24/7</div>
                     <p>Dias e noites, feriados e madrugadas. Prontidão total nas vias de São Paulo.</p>
@@ -197,21 +202,21 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-map map-cyber-wrap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117066.38875323927!2d-46.732386221568856!3d-23.635832811467475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35ba2f56038936!2sS%C3%A3o%20Paulo%20-%20Zona%20Sul%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1683050123456!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117066.38875323927!2d-46.732386221568856!3d-23.635832811467475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35ba2f56038936!2sS%C3%A3o%20Paulo%20-%20Zona%20Sul%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1683050123456!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da área de atuação em São Paulo"></iframe>
             <div class="scanline"></div>
         </div>
         <div class="footer-content container">
             <div class="footer-brand">
-                <img src="assets/logo1.jpeg" alt="JG Logo" class="footer-logo">
+                <img src="assets/logo1.jpeg" alt="JG Logo" class="footer-logo" width="160" height="58" loading="lazy">
                 <p class="mission-text">> O parceiro de resgate rodoviário na zona urbana.</p>
             </div>
             
             <div class="footer-contact">
                 <h4 class="neon-line-bottom">TRANSMISSÃO</h4>
-                <p class="contact-line" onclick="window.open('https://wa.me/5511965877326', '_blank')"><i class="fa-solid fa-phone highlight-neon"></i> (11) 96587-7326</p>
+                <p class="contact-line" onclick="window.open('https://wa.me/5511965877326', '_blank')" role="button" tabindex="0" aria-label="Entrar em contato pelo telefone (11) 96587-7326" onkeypress="if(event.key === 'Enter') window.open('https://wa.me/5511965877326', '_blank')"><i class="fa-solid fa-phone highlight-neon" aria-hidden="true"></i> (11) 96587-7326</p>
                 <div class="social-links-urban">
-                    <a href="https://www.instagram.com/jgreboqueguincho/" target="_blank" class="cyber-btn"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/5511965877326" target="_blank" class="cyber-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/jgreboqueguincho/" target="_blank" class="cyber-btn" aria-label="Instagram da JG Reboque Guinchos"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/5511965877326" target="_blank" class="cyber-btn" aria-label="WhatsApp da JG Reboque Guinchos"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -221,13 +226,13 @@
     </footer>
     
     <!-- Floating Action Terminal -->
-    <a href="https://wa.me/5511965877326?text=URG%C3%8ANCIA%3A+Preciso+de+Guincho." class="fab-urban" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://wa.me/5511965877326?text=URG%C3%8ANCIA%3A+Preciso+de+Guincho." class="fab-urban" target="_blank" aria-label="Contato de emergência via WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
         <span>S_O_S</span>
     </a>
 
     <!-- VanillaTilt JS for 3D urban poster effect -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
