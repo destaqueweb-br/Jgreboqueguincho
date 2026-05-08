@@ -195,7 +195,7 @@ h1, h2, h3, h4 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('assets/truck-bg-1.jpg.jpeg');
+    background-image: url('assets/truck-bg-1.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -427,7 +427,7 @@ h1, h2, h3, h4 {
     padding: 40px;
 }
 
-.urban-box h4 {
+.urban-box h3 {
     font-size: 1.8rem;
     margin-bottom: 30px;
     display: flex;
@@ -435,7 +435,7 @@ h1, h2, h3, h4 {
     gap: 15px;
 }
 
-.urban-box h4 i {
+.urban-box h3 i {
     color: var(--neon-blue);
 }
 
@@ -564,7 +564,7 @@ h1, h2, h3, h4 {
     padding: 20px;
     border-top: 1px dashed rgba(255,255,255,0.1);
     font-family: monospace;
-    color: #666;
+    color: #a1a1aa;
 }
 
 .blink { animation: blinker 1s linear infinite; }
