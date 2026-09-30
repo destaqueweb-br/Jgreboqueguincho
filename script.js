@@ -38,6 +38,43 @@ navLinksAnchors.forEach(link => {
     });
 });
 
+// Mobile Menu Dropdown Toggles
+const navDropdowns = document.querySelectorAll('.nav-item');
+
+navDropdowns.forEach(item => {
+    const toggle = item.querySelector('.dropdown-toggle');
+    if (toggle) {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // On mobile, toggle .open class
+            if (window.innerWidth <= 768) {
+                item.classList.toggle('open');
+            }
+        });
+    }
+});
+
+// FAQ Accordion Toggle
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        // Close other open FAQ items
+        document.querySelectorAll('.faq-item').forEach(faq => {
+            faq.classList.remove('active');
+        });
+        
+        // Toggle current item
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
 // Efeitos de Scroll (Intersection Observer)
 const revealElements = document.querySelectorAll('.reveal');
 const slideUpElements = document.querySelectorAll('.slide-up-anim');
@@ -80,3 +117,4 @@ if (glitchText) {
         }, 150);
     }, 3000);
 }
+
